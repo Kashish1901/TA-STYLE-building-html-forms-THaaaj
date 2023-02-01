@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/b5e6e39f18.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="padding">
+        <header class="padding nav-bar">
             <div class="container flex align-center">
                 <div class="brand-logo align-center">
                     <img src="assets/logo.png" alt="logo-image"/>
@@ -38,8 +38,61 @@
                 <img src="assets/dots-3.png" alt="three-dots"/>
                 <p>We assist you to chose the best</p>
                 <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
-            </div>
-            <footer class="padding container">
+            
+            <form action="" class="flex align-start">
+                <fieldset class="flex-46">
+                    <label for="destination">Choose Your Destination</label>
+                    <input  class="form-control" type="text" name="destination" id="destination" placeholder="Type your destination"/>
+                    <div class="flex margin-top">
+                        <div>
+                            <label for="check in">Check In Date</label>
+                            <input class="form-control" type="date" name="check-in" placeholder="Check In" id="check in">
+                        </div>
+                        <div>
+                            <label for="check out">Check Out Date</label>
+                        <input class="form-control" type="date" name="check-out" placeholder="Check Out" id="check out">
+                        </div>
+                       
+                    </div>
+                </fieldset>
+                <fieldset class="flex-46">
+                    <div class="flex">
+                        <div>
+                            <label for="room">How Many Rooms?</label>
+                            <select class="form-control" name="room" id="room">
+                               <option value="">1 Room</option>
+                               <option value="">2 Room</option>
+                               <option value="">3 Room</option>
+                               <option value="">4 Room</option>
+                               <option value="">5 Room</option>
+                            </select>
+                        </div>
+                       <div>
+                        <label for="adult">Adult</label>
+                        <select class="form-control" name="adult" id="adult">
+                           <option value="">1 </option>
+                           <option value="">2 </option>
+                           <option value="">3 </option>
+                           <option value="">4 </option>
+                           <option value="">5 </option>
+                        </select>
+                       </div>
+                    <div>
+                        <label for="child">Children</label>
+                        <select class="form-control" name="child" id="child">
+                            <option value="">0</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                         </select>
+                    </div>
+                    </div>
+                    <input type="submit" class="btn-pri margin-top" value=" CHECK AVAILABILITY"/>
+                </fieldset>
+            </form>
+        </div>
+            <footer class="padding container color">
                 <q>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</q>
                 <p>Intrepid explorers, globetrotters & cosmopolitan cultural travelers: let me share my passion for world travel and create your dream adventure!”-Anna MacKay</p>
                 <button class="btn">CONTINUE EXPLORE</button>
@@ -86,7 +139,7 @@
                 </div>
             </section>
             <section class="">
-                <div class="container map flex">
+                <div class="container map flex center">
                     <figure class="">
                         <img src="assets/north-america.png" alt="north-america"/>
                         <figcaption>NORTH-AMERICA</figcaption>
@@ -177,14 +230,17 @@
                 <button class="btn center">SHOW MORE PLACES</button>
             </section>
             <section class="container contact">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.886123992245!2d76.35321485069944!3d32.207299020029765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1675047652246!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               <form action="index.html">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.886123992245!2d76.35321485069944!3d32.207299020029765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1675047652246!5m2!1sen!2sin" width="100%"  height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div class="overlay"></div>
+                <form action="index.html" class="map-form">
                 <fieldset>
-                    <input  class="input-control" name="name" type="name" placeholder="Name"/>
-                    <input   class="input-control" name="email" type="email" placeholder="Email"/>
-                    <input  class="sub-control" name="subject" type="text" placeholder="Subject"/>
-                    <textarea  class="sub-control" name="message" col="90" rows="10" placeholder="Message"></textarea>
-                    <button>SEND MESSAGE NOW</button>
+                    <div class="flex">
+                        <input  class="form-control flex-46" name="name" type="name" placeholder="Name"/>
+                        <input   class="form-control" name="email" type="email" placeholder="Email"/>
+                    </div>
+                    <input  class="form-control flex-46" name="subject" type="text" placeholder="Subject"/>
+                    <textarea  class="form-control" name="message"  rows="10" placeholder="Message"></textarea>
+                    <button class="btn-pri">SEND MESSAGE NOW</button>
                 </fieldset>
                </form>
             </section>
