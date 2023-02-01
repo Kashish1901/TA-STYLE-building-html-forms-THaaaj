@@ -53,17 +53,26 @@ table {
     box-sizing: border-box;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 32px;
     background-color: white;
 }
 .flex{
     display: flex;
     justify-content: space-between;
 }
+.align-start
+{
+    align-items: flex-start;
+}
 .flex-50{
     flex: 0 1 50%;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-46{
+    flex: 0 1 46%;
 }
 .padding{
     padding: 40px;
@@ -71,6 +80,9 @@ table {
 .align-center{
     display: flex;
     align-items: center;
+}
+.margin-top{
+    margin-top: 48px;
 }
 /* Header */
 .brand-logo span{
@@ -91,8 +103,9 @@ main{
     background-color: rgb(230,230,230);
 }
 .hero-main{
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(../assets/banner.jpg);
-    height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)) ,url(../assets/banner.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0;
     text-align: center;
 }
 h1{
@@ -114,8 +127,37 @@ h1{
     border-radius: 50%;
     padding: 10px;
 }
-footer{
+form{
+    background-color: white;
+    margin: 0 auto;
+    padding: 32px;
+    max-width: 900px;
+    margin-top: 80px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: lightgrey;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+}
+.form-control:focus{
+    border: 1px solid lightgray;
+}
+form label{
+    text-align: left;
+    display: block;
+    font-size: 16px;
+    color: rgb(32,32,31);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.color{
     text-align: center;
+    background-color: rgb(239,239,239);
 }
 q{
     font-size: 32px;
@@ -192,7 +234,7 @@ p{
 }
 .map{
     background-color: rgb(105,198,186);
-    height: 160px;
+    height: 180px;
 }
 .map figure:hover{
     background-color: rgb(198,105,149);
@@ -211,7 +253,7 @@ figcaption{
 }
 .articles{
     display: flex;
-    align-items: center;
+   align-items: flex-start;
 }
 .box-a{
     width: 85%;
@@ -238,55 +280,48 @@ figcaption{
 }
 .box-a button{
     background-color: rgb(105,198,186);
-    font-size: 28px;
+    font-size: 22px;
+    padding: 40px;
     color: white;
     border: 0;
 }
 .article-sec{
     text-align: center;
 }
-.contact iframe{
-    width: 100%;
-    height: 800px;
-    margin: 50px 0;
+.contact{
+    position: relative;
 }
-form{
-    width: 700px;
-    height: 550px;
-    background-color: white;
+.overlay{
     position: absolute;
-    margin-top: -700px;
-    margin-left: 550px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
 }
-.input-control{
-    width: 45%;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(245,245,245);
-    border: 0;
-    font-size: 24px;
-    margin-top: 30px;
+.contact form{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 80px;
+    width: 30%;
 }
-.sub-control{
-    width: 94%;
-    padding: 10px;
-    margin: 10px;
-    border: 0;
-    font-size: 24px;
-    background-color: rgb(245,245,245);
+.contact .form-control{
+    margin-bottom: 16px;
 }
-form button{
-    width: 94%;
+.btn-pri{
+    width: 100%;
     padding: 10px;
-    margin: 10px;
     border: 0;
     font-size: 24px;
     color: white;
     background-color: rgb(105,198,186);
+    letter-spacing: 0.9px;
 }
 .footer{
     padding: 40px;
     color: white;
     background-color: rgb(105,198,186);
     font-size: 20px;
+    text-align: center;
 }
