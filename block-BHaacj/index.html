@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Assignment level-2 | building HTML forms</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="stylesheet/style.css"/>
+        <script src="https://kit.fontawesome.com/b5e6e39f18.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="padding nav-bar">
+            <div class="container flex align-center">
+                <div class="brand-logo align-center">
+                    <img src="assets/logo.png" alt="logo-image"/>
+                    <span>JOURNEY</span>
+                </div>
+                <nav class="nav">
+                    <ul class="flex">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Destinations</a>
+                        </li>
+                        <li>
+                            <a href="#">Recommended Places</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-main container">
+                <h1>LET'S BEGIN</h1>
+                <img src="assets/dots-3.png" alt="three-dots"/>
+                <p>We assist you to chose the best</p>
+                <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+            
+            <form action="" class="flex align-start">
+                <fieldset class="flex-46">
+                    <label for="destination">Choose Your Destination</label>
+                    <input  class="form-control" type="text" name="destination" id="destination" placeholder="Type your destination"/>
+                    <div class="flex margin-top">
+                        <div>
+                            <label for="check in">Check In Date</label>
+                            <input class="form-control" type="date" name="check-in" placeholder="Check In" id="check in">
+                        </div>
+                        <div>
+                            <label for="check out">Check Out Date</label>
+                        <input class="form-control" type="date" name="check-out" placeholder="Check Out" id="check out">
+                        </div>
+                       
+                    </div>
+                </fieldset>
+                <fieldset class="flex-46">
+                    <div class="flex">
+                        <div>
+                            <label for="room">How Many Rooms?</label>
+                            <select class="form-control" name="room" id="room">
+                               <option value="">1 Room</option>
+                               <option value="">2 Room</option>
+                               <option value="">3 Room</option>
+                               <option value="">4 Room</option>
+                               <option value="">5 Room</option>
+                            </select>
+                        </div>
+                       <div>
+                        <label for="adult">Adult</label>
+                        <select class="form-control" name="adult" id="adult">
+                           <option value="">1 </option>
+                           <option value="">2 </option>
+                           <option value="">3 </option>
+                           <option value="">4 </option>
+                           <option value="">5 </option>
+                        </select>
+                       </div>
+                    <div>
+                        <label for="child">Children</label>
+                        <select class="form-control" name="child" id="child">
+                            <option value="">0</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                         </select>
+                    </div>
+                    </div>
+                    <input type="submit" class="btn-pri margin-top" value=" CHECK AVAILABILITY"/>
+                </fieldset>
+            </form>
+        </div>
+            <footer class="padding container color">
+                <q>YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</q>
+                <p>Intrepid explorers, globetrotters & cosmopolitan cultural travelers: let me share my passion for world travel and create your dream adventure!”-Anna MacKay</p>
+                <button class="btn">CONTINUE EXPLORE</button>
+            </footer>
+            </section>
+            <section class="popularity">
+                <div class="container">
+                    <div class="flex">
+                    <div class="flex-50">
+                        <img src="assets/tm-img-01.jpg" alt="europe"/>
+                    </div>
+                    <div class="flex-50">
+                        <div class="box-1">
+                            <h2>Europe's most visited places</h2>
+                            <p>Vancouver Island, British Columbia. I also draw on my rich travel experiences to custom-design dream itineraries to fulfill the travel fantasies of savvy travelers like you, who want to see their favourite corner of the</p>
+                            <button>CONTINUE READING</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-50">
+                        <div class="box-2">
+                            <h2>Asia's most popular places</h2>
+                            <p>Vancouver Island, British Columbia. I also draw on my rich travel experiences to custom-design dream itineraries to fulfill the travel fantasies of savvy travelers like you, who want to see their favourite corner of the</p>
+                            <button>CONTINUE READING</button>
+                        </div>
+                    </div>
+                    <div class="flex-50">
+                        <img src="assets/tm-img-02.jpg" alt="asia"/>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-50">
+                        <img src="assets/tm-img-03.jpg" alt="america"/>
+                    </div>
+                    <div class="flex-50">
+                        <div class="box-1">
+                            <h2>America's most famous places</h2>
+                            <p>Vancouver Island, British Columbia. I also draw on my rich travel experiences to custom-design dream itineraries to fulfill the travel fantasies of savvy travelers like you, who want to see their favourite corner of the</p>
+                            <button>CONTINUE READING</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="">
+                <div class="container map flex center">
+                    <figure class="">
+                        <img src="assets/north-america.png" alt="north-america"/>
+                        <figcaption>NORTH-AMERICA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/south-america.png" alt="south-america"/>
+                        <figcaption>SOUTH-AMERICA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/europe.png" alt="europe"/>
+                        <figcaption>EUROPE</figcaption>
+                    </figure>
+                    <figure class="active">
+                        <img src="assets/asia.png" alt="asia"/>
+                        <figcaption>ASIA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/africa.png" alt="africa"/>
+                        <figcaption>AFRICA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/australia.png" alt="australia"/>
+                        <figcaption>AUSTRALIA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/antartica.png" alt="antartica"/>
+                        <figcaption>ANTARTICA</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="article-sec container">
+                <article class="articles container">
+                    <div class="box-a flex">
+                        <img src="assets/tm-img-04.jpg" alt="tm-img"/>
+                        <div>
+                        <h3>asia resort hotel</h3>
+                        <address>Singapore</address>
+                        <p>Asia near the sacred Dal Lake. It features 25 well-appointed accommodations, including 2 junior suites with terrace, 2 two bedroom family suites with terrac</p>
+                    </div>
+                    <img  class="curve" src="assets/button-curve.png" alt="curve-button">
+                        <button>
+                           <strong> $440 </strong>CONTINUE READING
+                        </button>
+                    </div>
+                </article>
+                <article class="articles container">
+                    <div class="box-a flex">
+                        <img src="assets/tm-img-05.jpg" alt="tm-img"/>
+                        <div>
+                        <h3>nullam eget est a nisl</h3>
+                        <address>Yangon, Myanmar</address>
+                        <p>Asia near the sacred Dal Lake. It features 25 well-appointed accommodations, including 2 junior suites with terrace, 2 two bedroom family suites with terrac</p>
+                    </div>
+                    <img  class="curve" src="assets/button-curve.png" alt="curve-button">
+                        <button>
+                           <strong> $450 </strong>CONTINUE READING
+                        </button>
+                    </div>
+                </article>
+                <article class="articles container">
+                    <div class="box-a flex">
+                        <img src="assets/tm-img-06.jpg" alt="tm-img"/>
+                        <div>
+                        <h3>proin interdum ullamcorper</h3>
+                        <address>Bangkok, Thailand</address>
+                        <p>Asia near the sacred Dal Lake. It features 25 well-appointed accommodations, including 2 junior suites with terrace, 2 two bedroom family suites with terrac</p>
+                    </div>
+                    <img  class="curve" src="assets/button-curve.png" alt="curve-button">
+                        <button>
+                           <strong> $460 </strong>CONTINUE READING
+                        </button>
+                    </div>
+                </article>
+                <article class="articles container">
+                    <div class="box-a flex">
+                        <img src="assets/tm-img-07.jpg" alt="tm-img"/>
+                        <div>
+                        <h3>lorem ipsum dolor sit</h3>
+                        <address>Vientiane, Laos</address>
+                        <p>Asia near the sacred Dal Lake. It features 25 well-appointed accommodations, including 2 junior suites with terrace, 2 two bedroom family suites with terrac</p>
+                    </div>
+                    <img  class="curve" src="assets/button-curve.png" alt="curve-button">
+                        <button>
+                           <strong> $470 </strong>CONTINUE READING
+                        </button>
+                    </div>
+                </article>
+                <button class="btn center">SHOW MORE PLACES</button>
+            </section>
+            <section class="container contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.886123992245!2d76.35321485069944!3d32.207299020029765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1675047652246!5m2!1sen!2sin" width="100%"  height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <div class="overlay"></div>
+                <form action="index.html" class="map-form">
+                <fieldset>
+                    <div class="flex">
+                        <input  class="form-control flex-46" name="name" type="name" placeholder="Name"/>
+                        <input   class="form-control" name="email" type="email" placeholder="Email"/>
+                    </div>
+                    <input  class="form-control flex-46" name="subject" type="text" placeholder="Subject"/>
+                    <textarea  class="form-control" name="message"  rows="10" placeholder="Message"></textarea>
+                    <button class="btn-pri">SEND MESSAGE NOW</button>
+                </fieldset>
+               </form>
+            </section>
+        
+        <footer>
+            <div class="container footer">
+            <small>Copyright &copy; 2020 Your Company .Designed by template Mo</small>
+        </div>
+        </footer>
+        </main>
+    </body>
+</html>
